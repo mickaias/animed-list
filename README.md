@@ -1,30 +1,30 @@
-<h1>Lista de tarefas</h1> 
+<h1 align="center">Lista de tarefas</h1> 
 
-=======
+========
 
 # Tecnologias
 
- * React
- * JavaScript
- * Styled-components
+ * React⚛️
+ * JavaScript✔️
+ * Styled-components✔️
+
+========
 
  # Funcionalidades
 
  * Adicionar Tarefas
  * Excluir Tarefas
 
-=======
+========
 
-# Tecnologias
+## Veja como é: 
 
- * React
- * JavaScript
- * Styled-components
+<h1 align="center">
+  <img alt="Form" src="./assets/todolist.png" />
+</h1>
 
- # Funcionalidades
+========
 
- * Adicionar Tarefas
- * Excluir Tarefas
-
+Feito por <a href="https://www.linkedin.com/in/mickaias-kaw%C3%A3-348340233/">Mickaias Nunes</a>🚀🚀
 
 
