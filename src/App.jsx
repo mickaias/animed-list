@@ -22,7 +22,7 @@ const App = () => {
       id: 3,
       text: 'Gastar menos',
       category: 'Pessoal',
-      isCompleted: true
+      isCompleted: false
     },
   ]);
 
@@ -39,6 +39,22 @@ const App = () => {
     setTodos(newTodos);
   }
 
+  const removeTodo = (id) => {
+    const newTodos = [...todos];
+    const filteredTodos = newTodos.filter((todo) =>
+      todo.id !== id ? todo : null
+    );
+
+    setTodos(filteredTodos)
+  }
+
+  const completeTodo = (id) => {
+    const newTodos = [...todos]
+    newTodos.map((todo) => todo.id === id ? todo.isCompleted = !todo.isCompleted : todo
+    );
+    setTodos(newTodos)
+  }
+
   return (
     <>
       <GlobalStyle />
@@ -47,7 +63,7 @@ const App = () => {
         <Title>Todo-list</Title>
         <WraperDiv>
           {todos.map((todo) => (
-            <Todo key={todo.id} todo={todo} />
+            <Todo key={todo.id} todo={todo} removeTodo={removeTodo} completeTodo={completeTodo} />
           ))}
         </WraperDiv>
       </Apps>
